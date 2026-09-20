@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+out.txt
+.env
+.DS_Store
+
+# Local saved workbooks & test outputs
+saved/
+
+# Machine-specific catalog & cert files
+catalog/
+*.der
+server/cert.der
+
+# Logs and previews
+*.log
+*_preview.html

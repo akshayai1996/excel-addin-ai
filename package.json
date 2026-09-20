@@ -1,0 +1,14 @@
+{
+  "name": "excel-ai-addin",
+  "version": "1.0.0",
+  "description": "100% Local AI Assistant Add-in for Microsoft Excel Desktop powered by OpenCode",
+  "author": "Akshay Jatin Solanki",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akshayai1996/excel-addin-ai.git"
+  },
+  "scripts": {
+    "start": "python server/bridge_server.py"
+  }
+}
