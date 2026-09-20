@@ -159,6 +159,23 @@ readme_content = f"""# 🚀 Excel AI Assistant
 
 ---
 
+## 🎬 Working Proof Demo Video
+
+> 🎥 **1080p Live Demonstration:** Watch Excel AI Assistant dynamically parse instructions, calculate color codes, and batch-format rows live inside Microsoft Excel Desktop.
+
+<div align="center">
+  <video src="assets/Simpink_Rec_20260920_212837.webm" controls="controls" width="100%" poster="assets/demo_preview.png">
+    <p>Your browser does not support the video tag.</p>
+  </video>
+  <br>
+  <a href="assets/Simpink_Rec_20260920_212837.webm">
+    <img src="assets/demo_preview.png" alt="Working Proof Demo Preview" width="100%" />
+  </a>
+  <p><strong><a href="assets/Simpink_Rec_20260920_212837.webm">▶️ Play Full 1080p Working Demo Video (Simpink_Rec_20260920_212837.webm)</a></strong></p>
+</div>
+
+---
+
 ## 🖥️ How It Works
 
 ```
