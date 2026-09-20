@@ -31,22 +31,20 @@
 
 ---
 
-## 🎬 Working Proof Demo Video
+## 🎥 Live Demo
 
-> 🎥 **Live Browser Playable Demonstration:** Watch Excel AI Assistant dynamically parse instructions, calculate color codes, and batch-format rows live inside Microsoft Excel Desktop.
+See Excel AI Assistant in action! Click the links below to watch the native recordings directly in your browser:
+
+### [▶️ Click to Play: Working Proof Demo (1080p Full HD)](https://github.com/user-attachments/assets/457a91d6-aafc-4e3f-9341-5add2c4be42a)
+
+### [▶️ Click to Play: Original WebM Recording (Simpink_Rec_20260920_212837.webm)](https://github.com/user-attachments/assets/edef1485-6856-40d6-b946-590e578f030f)
 
 <div align="center">
-  <p><strong>⚡ Real-Time Execution Demo (Auto-playing Preview):</strong></p>
-  <a href="assets/demo.mp4">
-    <img src="assets/demo_live.gif" alt="Excel AI Assistant Live Working Demo" width="100%" />
-  </a>
+  <video src="https://github.com/user-attachments/assets/457a91d6-aafc-4e3f-9341-5add2c4be42a" controls="controls" width="100%">
+  </video>
   <br><br>
-  <p><em>Click the preview above or use the links below to watch the complete 1080p recording with player controls:</em></p>
-  <p>
-    <a href="assets/demo.mp4"><strong>▶️ Play in GitHub Video Player (assets/demo.mp4)</strong></a> &nbsp;|&nbsp;
-    <a href="https://raw.githubusercontent.com/akshayai1996/excel-addin-ai/main/assets/demo.mp4"><strong>🌐 Direct Browser Video Stream</strong></a> &nbsp;|&nbsp;
-    <a href="assets/Simpink_Rec_20260920_212837.webm"><strong>📹 WebM Master Recording</strong></a>
-  </p>
+  <p><strong>⚡ Real-Time Auto-playing Execution Preview:</strong></p>
+  <img src="assets/demo_live.gif" alt="Excel AI Assistant Live Working Demo" width="100%" />
 </div>
 
 ---
