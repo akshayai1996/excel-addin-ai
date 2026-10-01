@@ -11,7 +11,7 @@
 - **No $30/mo Subscription:** Free forever under the MIT license — no Microsoft 365 Copilot license required.
 - **Native Excel Desktop Integration:** Built with Office.js running directly inside Excel's native taskpane.
 - **Bulletproof Safety:** Instant multi-step Undo/Redo plus automatic `.xlsx` pre-execution snapshot backups.
-- **Model Freedom:** Connects to OpenCode, giving you access to local LLMs (Ollama, DeepSeek, Llama) or custom endpoints.
+- **Model Freedom:** Connects to OpenCode, giving you access to local LLMs (DeepSeek, Llama) or custom endpoints.
 
 ---
 
@@ -21,7 +21,7 @@
 |:---|:---:|:---:|
 | **Monthly Cost** | **$30 / user / month** ($360/year) | **$0 / Free & Open Source (MIT)** |
 | **Data Privacy** | Cloud transmission to external servers | **100% Local & Private (On-Device)** |
-| **Model Choice** | Vendor locked to Microsoft cloud | **Any model supported by OpenCode / Ollama** |
+| **Model Choice** | Vendor locked to Microsoft cloud | **Any model supported by OpenCode** |
 | **Undo / Redo** | Standard Excel undo (often broken by macros) | **Full Transactional Undo & Redo Engine** |
 | **Full Rollback** | Manual version history required | **Automatic pre-batch `.xlsx` snapshot backups** |
 | **Chart Creation** | Basic charts | **Non-destructive charts with restore persistence** |
@@ -33,11 +33,11 @@
 
 ## 🎥 Live Demo
 
-See Excel AI Assistant in action — click ▶️ to play the full demo inline:
+See Excel AI Assistant in action:
 
-<video src="assets/demo.mp4" controls poster="assets/demo_preview.png" width="100%">
-  Your browser does not support the video tag — <a href="assets/demo.mp4">download the demo here</a>.
-</video>
+![Excel AI Assistant — live demo](assets/demo_live.gif)
+
+> 📥 [Download full video (MP4)](assets/demo.mp4)
 
 ---
 
