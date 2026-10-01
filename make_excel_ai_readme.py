@@ -161,13 +161,9 @@ readme_content = f"""# 🚀 Excel AI Assistant
 
 ## 🎥 Live Demo
 
-See Excel AI Assistant in action — native recording, plays right in your browser:
+See Excel AI Assistant in action — click to play the full demo:
 
 [![▶️ Watch the working-proof demo (1080p Full HD)](assets/demo_preview.png)](assets/demo.mp4)
-
-![Excel AI Assistant live demo](assets/demo_live.gif)
-
-> 📹 Video: [`assets/demo.mp4`](assets/demo.mp4) · Preview: [`assets/demo_preview.png`](assets/demo_preview.png) · Animated: [`assets/demo_live.gif`](assets/demo_live.gif)
 
 ---
 
