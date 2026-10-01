@@ -33,14 +33,13 @@
 
 ## 🎥 Live Demo
 
-See Excel AI Assistant in action! Watch the native recording directly in your browser:
+See Excel AI Assistant in action — native recording, plays right in your browser:
 
-### [▶️ Click to Play: Working Proof Demo (1080p Full HD)](https://github.com/user-attachments/assets/457a91d6-aafc-4e3f-9341-5add2c4be42a)
+[![▶️ Watch the working-proof demo (1080p Full HD)](assets/demo_preview.png)](assets/demo.mp4)
 
-<div align="center">
-  <video src="https://github.com/user-attachments/assets/457a91d6-aafc-4e3f-9341-5add2c4be42a" controls="controls" width="100%">
-  </video>
-</div>
+![Excel AI Assistant live demo](assets/demo_live.gif)
+
+> 📹 Video: [`assets/demo.mp4`](assets/demo.mp4) · Preview: [`assets/demo_preview.png`](assets/demo_preview.png) · Animated: [`assets/demo_live.gif`](assets/demo_live.gif)
 
 ---
 
@@ -58,7 +57,7 @@ See Excel AI Assistant in action! Watch the native recording directly in your br
 │  ├── Non-Destructive Chart & Graph Lifecycle Manager                   │
 │  └── Pre-Batch Full Workbook (.xlsx) Snapshot Engine                   │
 │  │                                                                     │
-│  ▼ Local HTTPS Request  (https://localhost:3000)                       │
+│  ▼ Local HTTP Request  (http://localhost:3000)                         │
 │  Local Python Bridge Server  [server/bridge_server.py]                 │
 │  ├── 100% On-Device Traffic -- Zero Cloud Transmission                 │
 │  ├── Session-Isolated Chat History & State Sync                        │
@@ -131,7 +130,7 @@ When AI interacts with financial models and large datasets, errors must never co
 │  1. Run PowerShell as Administrator:  .\setup_desktop.ps1              │
 │     --> Generates and trusts the localhost SSL certificate.            │
 │  2. Start the local bridge server:    start_server.bat                 │
-│     --> Starts https://localhost:3000 in background/terminal.          │
+│     --> Starts http://localhost:3000 in background/terminal.           │
 │  3. Open Excel Desktop:               Insert -> My Add-ins             │
 │     --> Select 'AI Assistant' and click Add. Ready to use!             │
 └────────────────────────────────────────────────────────────────────────┘
@@ -139,22 +138,22 @@ When AI interacts with financial models and large datasets, errors must never co
 
 ### Detailed Setup (3 Minutes)
 
-#### Step 1: Trust the Localhost SSL Certificate
-Excel Desktop's embedded WebView2 requires a valid HTTPS connection to load the taskpane from `localhost`:
+#### Step 1: Trust the Localhost SSL Certificate (optional / legacy)
+Excel Desktop's embedded WebView2 loads the taskpane from `localhost` over plain HTTP — no certificate needed:
 1. Open PowerShell **as Administrator**.
 2. Run:
    ```powershell
    cd path\to\excel-addin-ai
    .\setup_desktop.ps1
    ```
-   *This automatically generates the certificate and registers it in the Windows Trusted Root Certification Authorities store.*
+   *`setup_desktop.ps1` also generates an optional self-signed certificate (legacy — the bridge server runs plain HTTP, so this step can be skipped).*
 
 #### Step 2: Launch the Local Bridge Server
 Double-click `start_server.bat` or run from your terminal:
 ```bash
 python server/bridge_server.py
 ```
-The server will start listening at `https://localhost:3000`.
+The server will start listening at `http://localhost:3000`.
 
 #### Step 3: Sideload the Add-in in Excel
 1. Open any workbook in **Excel Desktop**.
@@ -185,14 +184,14 @@ Try pasting these into the taskpane with your data selected:
 excel-addin-ai/
 ├── manifest.xml           # Office Add-in manifest (ribbon button, icons, permissions)
 ├── package.json           # Add-in metadata and launch script
-├── start_server.bat       # 1-click launcher for the Python HTTPS bridge server
+├── start_server.bat       # 1-click launcher for the Python HTTP bridge server
 ├── setup_desktop.ps1      # Automated PowerShell setup for SSL cert trust
 ├── install_cert.py        # Cross-platform certificate generator
 ├── register_catalog.py    # Windows developer add-in catalog registry helper
 ├── DESKTOP_SETUP.md       # Comprehensive offline setup & troubleshooting documentation
-├── assets/                # High-res ribbon and taskpane icons (16px, 32px, 64px, 80px)
+├── assets/                # Ribbon/taskpane icons + demo media (demo.mp4, demo_live.gif, demo_preview.png)
 ├── server/
-│   ├── bridge_server.py   # HTTPS bridge server, AST safety validator, OpenCode connector
+│   ├── bridge_server.py   # HTTP bridge server, AST safety validator, OpenCode connector
 │   ├── cert.pem           # Local development SSL certificate
 │   └── key.pem            # Local development private key
 ├── src/

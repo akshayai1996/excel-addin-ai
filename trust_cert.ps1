@@ -1,4 +1,4 @@
-$certFile = 'C:\Users\Asus\Desktop\COMMANDCODE PROJECTS\excel-ai-addin\server\cert.pem'
+$certFile = Join-Path $PSScriptRoot 'server\cert.pem'
 $certName = 'ExcelAIAssistantLocalhost'
 
 # Read PEM and convert to X509Certificate2

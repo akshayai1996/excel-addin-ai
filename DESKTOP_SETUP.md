@@ -2,7 +2,7 @@
 
 > Works in **Excel Desktop** (Windows) via the same Office Add-in manifest.  
 > The add-in runs in Excel's embedded WebView2 browser, which connects to the
-> local Python HTTPS bridge server.
+> local Python HTTP bridge server (plain HTTP on localhost — no certificate needed).
 
 ---
 
@@ -18,13 +18,17 @@
 
 ## One-Time Setup (run once per machine)
 
-### Step 1 — Run the setup script as Administrator
+### Step 1 — Run the setup script as Administrator (optional / legacy cert step)
 
 Right-click `setup_desktop.ps1` → **Run with PowerShell as Administrator**
 
+> The bridge server runs plain HTTP on localhost, so Excel Desktop needs no
+> certificate. This step is optional/legacy — it only generates and trusts a
+> self-signed localhost certificate for environments that enable HTTPS.
+
 This will:
 1. Generate a self-signed SSL certificate for `localhost` (if not already present)
-2. **Trust it** in the Windows Certificate Store → this is what makes Excel Desktop's WebView2 accept the HTTPS connection
+2. **Trust it** in the Windows Certificate Store (only needed if you switch the bridge to HTTPS)
 3. Print sideloading instructions
 
 > **Why admin?** The Windows certificate store (Local Machine → Trusted Root) requires elevated permissions.
@@ -118,7 +122,8 @@ Excel Desktop
 ```
 
 The same add-in code works in both **Excel Web** (browser) and **Excel Desktop** (WebView2).  
-The only Desktop-specific requirement is trusting the self-signed cert (`setup_desktop.ps1`).
+There is no certificate requirement — the bridge runs plain HTTP on localhost
+(`setup_desktop.ps1` cert step is optional/legacy).
 
 ---
 
