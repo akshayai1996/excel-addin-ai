@@ -33,9 +33,11 @@
 
 ## 🎥 Live Demo
 
-See Excel AI Assistant in action — click to play the full demo:
+See Excel AI Assistant in action — click ▶️ to play the full demo inline:
 
-[![▶️ Watch the working-proof demo (1080p Full HD)](assets/demo_preview.png)](assets/demo.mp4)
+<video src="assets/demo.mp4" controls poster="assets/demo_preview.png" width="100%">
+  Your browser does not support the video tag — <a href="assets/demo.mp4">download the demo here</a>.
+</video>
 
 ---
 
