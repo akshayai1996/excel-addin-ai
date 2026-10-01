@@ -1,0 +1,4 @@
+# Exclude assets/ from source-code ZIP archives (GitHub Download ZIP).
+# Icons and demo media remain tracked in git and visible on the repo page
+# but are omitted when users download the source ZIP.
+assets/ export-ignore
